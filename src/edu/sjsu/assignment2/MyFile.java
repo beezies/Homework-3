@@ -5,9 +5,25 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+/**
+ * Contains methods for copying prime numbers from one file to another.
+ * 
+ * @author briannanicole
+ *
+ */
+
 public class MyFile {
 
-	public void writePrimes(String file1, String file2) throws FileNotFoundException {
+	/**
+	 * Takes the name of an existing file and copies every prime number present in
+	 * that file into a new file under the name given by file2.
+	 * 
+	 * @param file1 Input file
+	 * @param file2 Output file
+	 * @throws FileNotFoundException
+	 */
+
+	public static void writePrimes(String file1, String file2) throws FileNotFoundException {
 		File inputFile = new File(file1);
 		PrintWriter output = new PrintWriter(file2);
 
@@ -34,7 +50,14 @@ public class MyFile {
 		output.close();
 	}
 
-	private boolean isPrime(int num) {
+	/**
+	 * Determines whether or not a given integer is prime.
+	 * 
+	 * @param num Integer to check
+	 * @return Whether or not integer is prime
+	 */
+
+	public static boolean isPrime(int num) {
 		if (num <= 1)
 			return false;
 		for (int i = 2; i <= (num / 2); i++) {
@@ -45,9 +68,8 @@ public class MyFile {
 	}
 
 	public static void main(String[] args) {
-		MyFile file = new MyFile();
 		try {
-			file.writePrimes("SomePrimes", "ndlsnk");
+			MyFile.writePrimes("SomePrimes", "ndlsnk");
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found!");
 		}
