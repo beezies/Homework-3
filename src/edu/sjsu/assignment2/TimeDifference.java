@@ -3,14 +3,15 @@ package edu.sjsu.assignment2;
 import java.util.Scanner;
 
 /**
+ * 
  * Contains methods for determining the difference between two given times. Uses
  * user input to supply time and deals with incorrect submissions.
  * 
  * @author briannanicole
- *
+ *R
  */
 
-public class TimeDifference {
+public class TimeDifference {  
 
 	/**
 	 * Takes two times as integers and calculates the amount of time between them.
@@ -37,8 +38,8 @@ public class TimeDifference {
 	}
 
 	/**
-	 * Accepts a time as a string and converts it to an integer while
-	 * ensuring it is within proper format.
+	 * Accepts a time as a string and converts it to an integer while ensuring it is
+	 * within proper format.
 	 * 
 	 * @param timeString Time given as a string
 	 * @return The time as an integer
@@ -57,7 +58,7 @@ public class TimeDifference {
 	/**
 	 * Asks user for input and handles responses.
 	 */
-	
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		boolean valid = false;

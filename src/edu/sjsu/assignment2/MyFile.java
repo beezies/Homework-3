@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
+ * 
  * Contains methods for copying prime numbers from one file to another.
  * 
  * @author briannanicole
@@ -15,8 +16,8 @@ import java.util.Scanner;
 public class MyFile {
 
 	/**
-	 * Takes the name of an existing file and copies every prime number present in
-	 * that file into a new file under the name given by file2.
+	 * Takes the name of an existing file, and copies every prime number present in
+	 * that file into a new file given by file2.
 	 * 
 	 * @param file1 Input file
 	 * @param file2 Output file
