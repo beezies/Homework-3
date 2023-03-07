@@ -7,11 +7,10 @@ import java.util.Scanner;
  * Contains methods for determining the difference between two given times. Uses
  * user input to supply time and deals with incorrect submissions.
  * 
- * @author briannanicole
- *R
+ * @author briannanicole R
  */
 
-public class TimeDifference {  
+public class TimeDifference {
 
 	/**
 	 * Takes two times as integers and calculates the amount of time between them.
